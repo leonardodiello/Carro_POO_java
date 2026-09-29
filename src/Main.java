@@ -6,7 +6,7 @@ public class Main {
         var scanner = new Scanner(System.in);
 
         System.out.print("Digite o nome do dono do carro: ");
-        String nome = scanner.next();
+        String nome = scanner.nextLine();
 
         System.out.print("Digite o nome do modelo do carro: ");
         String modelo = scanner.next();
@@ -20,7 +20,7 @@ public class Main {
         System.out.print("Digite a quilometragem do carro: ");
         float km = scanner.nextFloat();
 
-        Carro corrola = new Carro(nome, modelo, marca, ano, km);
+        Carro corrola = new Carro(nome, marca, modelo, ano, km);
 
         corrola.infoGeral();
 
